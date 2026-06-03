@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: online-boutique
+  namespace: argocd
+spec:
+  project: boutique
+  source:
+    repoURL: https://github.com/VoAnhKiet1410/mini-ecommerce-gitops.git
+    targetRevision: main
+    path: apps/online-boutique/overlays/aws
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: boutique
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

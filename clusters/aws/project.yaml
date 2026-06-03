@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: boutique
+  namespace: argocd
+spec:
+  sourceRepos:
+    - https://github.com/VoAnhKiet1410/mini-ecommerce-gitops.git
+  destinations:
+    - namespace: boutique
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: external-secrets.io
+      kind: ClusterSecretStore
+    - group: ""
+      kind: Namespace

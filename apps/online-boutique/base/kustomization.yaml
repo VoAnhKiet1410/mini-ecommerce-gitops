@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: boutique
+resources:
+  - namespace.yaml
+  - redis/deployment.yaml
+  - redis/service.yaml
+  - currencyservice/deployment.yaml
+  - currencyservice/service.yaml
+  - productcatalogservice/deployment.yaml
+  - productcatalogservice/service.yaml
+  - cartservice/deployment.yaml
+  - cartservice/service.yaml
+  - checkoutservice/deployment.yaml
+  - checkoutservice/service.yaml
+  - frontend/deployment.yaml
+  - frontend/service.yaml
