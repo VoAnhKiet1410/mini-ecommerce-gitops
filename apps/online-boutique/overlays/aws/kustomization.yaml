@@ -1,20 +1,20 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../base
-  - ingress.yaml
-  - external-secrets/cluster-secret-store.yaml
-  - external-secrets/rds-externalsecret.yaml
+- ../../base
+- ingress.yaml
+- external-secrets/cluster-secret-store.yaml
+- external-secrets/rds-externalsecret.yaml
 images:
-  - name: frontend
-    newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/frontend
-    newTag: latest
-  - name: productcatalogservice
-    newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/productcatalogservice
-    newTag: latest
-  - name: cartservice
-    newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/cartservice
-    newTag: latest
-  - name: checkoutservice
-    newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/checkoutservice
-    newTag: latest
+- name: cartservice
+  newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/cartservice
+  newTag: 144f64e349fe6d425d24993358ad6aabeae984fc
+- name: checkoutservice
+  newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/checkoutservice
+  newTag: 144f64e349fe6d425d24993358ad6aabeae984fc
+- name: frontend
+  newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/frontend
+  newTag: 144f64e349fe6d425d24993358ad6aabeae984fc
+- name: productcatalogservice
+  newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/productcatalogservice
+  newTag: 144f64e349fe6d425d24993358ad6aabeae984fc
