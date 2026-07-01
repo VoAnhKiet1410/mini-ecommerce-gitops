@@ -8,13 +8,13 @@ resources:
 images:
 - name: cartservice
   newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/cartservice
-  newTag: 7e5d6dc8f46dee3a5c1d3c881b5b3854d28179c5
+  newTag: f8ab39c5eb75d9c258d707d651b6ea3224bc4b73
 - name: checkoutservice
   newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/checkoutservice
-  newTag: 7e5d6dc8f46dee3a5c1d3c881b5b3854d28179c5
+  newTag: f8ab39c5eb75d9c258d707d651b6ea3224bc4b73
 - name: frontend
   newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/frontend
-  newTag: 7e5d6dc8f46dee3a5c1d3c881b5b3854d28179c5
+  newTag: f8ab39c5eb75d9c258d707d651b6ea3224bc4b73
 - name: productcatalogservice
   newName: 962765735385.dkr.ecr.ap-southeast-1.amazonaws.com/mini-ecommerce/productcatalogservice
-  newTag: 7e5d6dc8f46dee3a5c1d3c881b5b3854d28179c5
+  newTag: f8ab39c5eb75d9c258d707d651b6ea3224bc4b73
